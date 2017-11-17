@@ -1,0 +1,43 @@
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.deps.json
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.json
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.dev.json
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csprojResolveAssemblyReference.cache
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfo.cs
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+C:\Users\Training\source\repos\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.deps.json
+D:\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.json
+D:\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.dev.json
+D:\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+D:\SeatAllocationWebApi\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csprojResolveAssemblyReference.cache
+D:\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csproj.CoreCompileInputs.cache
+D:\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfoInputs.cache
+D:\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfo.cs
+D:\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+D:\SeatAllocationWebApi\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.deps.json
+D:\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.json
+D:\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.dev.json
+D:\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+D:\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csprojResolveAssemblyReference.cache
+D:\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csproj.CoreCompileInputs.cache
+D:\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfoInputs.cache
+D:\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfo.cs
+D:\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+D:\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.deps.json
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.json
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.runtimeconfig.dev.json
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\bin\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csproj.CoreCompileInputs.cache
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfoInputs.cache
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.AssemblyInfo.cs
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.pdb
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationWebApi\obj\Debug\netcoreapp1.1\SeatAllocationWebApi.csprojResolveAssemblyReference.cache

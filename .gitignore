@@ -1,0 +1,6 @@
+# Server/.vs
+# Server/SeatAllocationTest_Cases/bin/**/netcoreapp2.0
+# Server/SeatAllocationTest_Cases/obj
+# Server/SeatAllocationWebApi/obj
+
+# Server/SeatAllocationWebApi/bin

@@ -1,0 +1,50 @@
+
+<div id="ma" class="main">
+<div class="col-md-6">
+<form>
+<label>Select Building:</label>
+	<input [(ngModel)]="temp" name="search" placeholder="Search.." list="channel" class="form-control">
+	  <datalist id="channel">
+		<option value="Block A"></option>
+		<option value="Block B"></option>
+		<option value="Block C"></option>
+		<option value="Block D"></option>
+		<option value="Block E"></option>
+		</datalist>
+</form>
+
+<!-- <div class="main col-md-6"> 
+ -->
+ <form>
+ <label>Select Floor:</label>
+	<input [(ngModel)]="temp1" name="search" placeholder="Search.." list="channel1" class="form-control">
+	  <datalist id="channel1">
+		<option value="Floor 1"></option>
+		<option value="Floor 2"></option>
+		<option value="Floor 3"></option>
+		<option value="Floor 4"></option>
+		<option value="Floor 5"></option>
+		</datalist>
+</form>
+<div class="submit">
+<button class="btn btn-info my-2 my-sm-0" (click)="searchData(temp,temp1)" id="go">check</button>  
+</div>
+ <div class="main">
+
+</div>
+</div>
+ </div>
+<div *ngIf="token==1">
+<div class="main col-md-8 col-xs-12">
+  <div style="display: block" >
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>
+</div>

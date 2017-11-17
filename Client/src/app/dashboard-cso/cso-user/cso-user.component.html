@@ -1,0 +1,137 @@
+
+<div class="container" ng-controller="datCtrl">
+  <!-- table of pending requests -->
+  <table class="table-responsive table-hover ">
+    <h1>Pending Request</h1>
+    <thead>
+      <tr>
+        <th>Request By</th>
+        <th>CC Code</th>
+        <th>Entity</th>
+        <th>Building Code</th>
+        <th>Floor Name</th>
+        <th>Requested On</th>
+        <th>No. Of Seats</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let user of request">
+      <tr class="tableinfo">
+        <td>{{user.requestedBy}}</td>
+        <td>{{user.ccCode}}</td>
+        <td>{{user.entity}}</td>
+        <td>{{user.buildingCode}}</td>
+        <td>{{user.floorStructures.floorName}}</td>
+        <td>{{user.requestedOn | date : "dd.MM.y"}}</td>
+        <td>{{user.noOfseats}}</td>
+        <td>
+          <button type="submit" class="btn btn-success" (click)="onViewRequest(user)">View Request</button>
+          <button class="btn btn-danger" (click)="onReject(user)">Reject</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="bar==1"  class="seat_type">
+    <label>Seat Type</label>
+    <select [(ngModel)]="value" (change)=onSeat(value)>
+  <option disabled>-Seat Type-</option>
+  <option value="open">Open</option>
+  <option value="closed">ODC</option>
+  </select>
+  </div>
+
+  <div *ngIf="token==1">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 ">
+      <div style="display: block">
+        <canvas class="graph" baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+
+  </div>
+  <div *ngIf="token==2" class="card_seats">
+    <!-- <div class="card">
+      <div class="card-header"><strong>Seats Distribution</strong></div>
+      <div class="card-block">
+        <p>Total Seats :- <input type="text" disabled value="{{requestedFloor.totalSeats}}"></p><br>
+        <p>Vacant Seats:-<input type="text" disabled value="{{requestedFloor.openVacantSeats}}"></p><br>
+      </div>
+    </div> -->
+      <div class="container">
+    <hr class="divider-title">
+    <div class="row">
+    <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  project">
+                <figure class="img-fluid">
+                    <img src="../../assets/total.svg" alt="nahi hai">
+                    <span class="actions">
+                        <span class="project-details"><strong>Total Seats:<br>{{requestedFloor.totalSeats}}</strong></span>
+                    </span>
+                </figure>
+            
+        </div> -->
+         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  project">
+                <figure class="img-fluid">
+                    <img class="total" src="../../assets/group.png">
+                    <span class="actions">
+                         <span class="project-details"><strong>Total Seats:<br> {{requestedFloor.totalSeats}}</strong></span>
+                    </span>
+                </figure>
+          </div>
+
+        
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  project">
+                <figure class="img-fluid">
+                    <img src="../../assets/vacant.png">
+                    <span class="actions">
+                         <span class="project-details"><strong>Vacant Seats:<br> {{requestedFloor.openVacantSeats}}</strong></span>
+                    </span>
+                </figure>
+          </div>
+        </div>
+        </div>
+        <div class="container btn_done ">
+  <button type="=button" class="btn btn-success" (click)=onAlloted()>Allot Seats</button>
+</div>
+
+
+  </div>
+  <div *ngIf="token==3" class="card_seats">
+    <!-- <div class="card">
+        <div class="card-header"><strong>Seats Distribution</strong></div>
+      <div class="card-block">
+        <p>Total Seats :- <input type="text" disabled value={{requestedFloor.abvSeats+requestedFloor.closedAllocatedSeats}}></p><br>
+        <p>ABV Seats :-<input type="text" disabled value={{requestedFloor.abvSeats}}></p><br>
+      </div>
+    </div> -->
+    <div class="container-fluid">
+    <hr class="divider-title">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  project">
+                <figure class="img-fluid">
+                    <img class="total" src="../../assets/group.png">
+                    <span class="actions">
+                        <span class="project-details"><strong>Total Seats:<br>{{requestedFloor.abvSeats+requestedFloor.closedAllocatedSeats}}</strong></span>
+                    </span>
+                </figure>
+            
+        </div>
+        
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 project">
+                <figure class="img-fluid">
+                    <img src="../../assets/vacant.png">
+                    <span class="actions">
+                         <span class="project-details"><strong>ABV Seats:<br>{{requestedFloor.abvSeats}}</strong></span>
+                    </span>
+                </figure>
+          </div>
+        </div>
+  </div>
+  <div class=" btn_done ">
+  <button type="=button" class="btn btn-success" (click)=onAlloted()>Allot Seats</button>
+</div>
+</div>
+<!-- <div *ngIf="bar==1" class="btn_done container"><br><br>
+  <button type="=button" class="btn btn-success" (click)=onAlloted()>Allot Seats</button>
+</div>
+ -->

@@ -1,0 +1,42 @@
+<div class="container location-form">
+  <div [hidden]="submitted">
+    <h1>ADD LOCATION</h1>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+
+      <div class="form-group">
+        <label for="locationCode">Location Code</label>
+        <input type="text" class="form-control" id="locationCode" required [(ngModel)]="model.locationCode" name="locationCode" #locationCode="ngModel">
+        <div [hidden]="locationCode.valid || locationCode.pristine" class="alert alert-danger">
+          Please Specify Location Code !
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="locationName">Location Name</label>
+        <input type="text" class="form-control" id="locationName" required [(ngModel)]="model.locationName" name="locationName" #locationName="ngModel">
+        <div [hidden]="locationName.valid || locationName.pristine" class="alert alert-danger">
+          Please Specify Location Name !
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="csoOwnerID">CSO Owner ID</label>
+        <input type="number" class="form-control" id="csoOwnerID" required [(ngModel)]="model.csoOwner" name="csoOwnerID" #csoOwnerID="ngModel">
+        <div [hidden]="csoOwnerID.valid || csoOwnerID.pristine" class="alert alert-danger">
+          Please Specify CSO Owner ID !
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="csoOwnerName">CSO Owner Name</label>
+        <input type="text" class="form-control" id="csoOwnerName" required [(ngModel)]="model.csoOwnerName" name="csoOwnerName" #csoOwnerName="ngModel">
+        <div [hidden]="csoOwnerName.valid || csoOwnerName.pristine" class="alert alert-danger">
+          Please Specify CSO Owner Name !
+        </div>
+      </div>
+
+      <button type="submit" (click)=addLocation(model) class="btn btn-success" [disabled]="!heroForm.form.valid">ADD</button>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="container floor-form">
+    <div [hidden]="submitted">
+      <h1>ADD FLOOR</h1>
+      <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  
+        <div class="form-group">
+          <label for="locationName">Location Name</label>
+          <select class="form-control" id="locationName" required [(ngModel)]="model.locationCode" (change)="select()" name="locationCode" #locationCode="ngModel">
+                        <option *ngFor="let vals of locations " [value]="vals.locationCode">{{vals.locationName}}</option>
+                      </select>
+          <div [hidden]="locationCode.valid || locationCode.pristine" class="alert alert-danger">
+            Please specify Location Name !
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="buildingName">Building Name</label>
+            <select class="form-control" id="buildingName" required [(ngModel)]="model.buildingCode"  name="buildingCode" #buildingCode="ngModel">
+                          <option *ngFor="let vals of buildings " [value]="vals.buildingCode">{{vals.buildingName}}</option>
+                        </select>
+            <div [hidden]="buildingCode.valid || buildingCode.pristine" class="alert alert-danger">
+              Please specify Building Name !
+            </div>
+          </div>
+
+
+      <div class="form-group">
+          <label for="floorName">Floor Number</label>
+          <input type="number" class="form-control" id="floorName" required [(ngModel)]="model.floorName" name="floorName" #floorName="ngModel">
+          <div [hidden]="floorName.valid || floorName.pristine" class="alert alert-danger">
+            Please Specify Floor Number !
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="openVacantSeats">Open ODC Seats</label>
+            <input type="number" class="form-control" id="openVacantSeats" required [(ngModel)]="model.openVacantSeats" name="openVacantSeats" #openVacantSeats="ngModel">
+            <div [hidden]="openVacantSeats.valid || openVacantSeats.pristine" class="alert alert-danger">
+              Please Specify Open ODC Seats !
+            </div>
+          </div>
+
+          <div class="form-group">
+              <label for="abvSeats">Closed ODC Seats</label>
+              <input type="number" class="form-control" id="abvSeats" required [(ngModel)]="model.abvSeats" name="abvSeats" #abvSeats="ngModel">
+              <div [hidden]="abvSeats.valid || abvSeats.pristine" class="alert alert-danger">
+                Please Specify Closed ODC Seats !
+              </div>
+            </div>
+  
+        <button type="submit" href="#" class="btn btn-success" [disabled]="!heroForm.form.valid" (click)=addFloor()>ADD</button>
+  
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationTest_Cases.deps.json
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationTest_Cases.runtimeconfig.json
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationTest_Cases.runtimeconfig.dev.json
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationTest_Cases.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationWebApi.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationWebApi.pdb
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\obj\Debug\netcoreapp2.0\SeatAllocationTest_Cases.csprojResolveAssemblyReference.cache
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\obj\Debug\netcoreapp2.0\SeatAllocationTest_Cases.csproj.CoreCompileInputs.cache
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\obj\Debug\netcoreapp2.0\SeatAllocationTest_Cases.AssemblyInfoInputs.cache
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\obj\Debug\netcoreapp2.0\SeatAllocationTest_Cases.AssemblyInfo.cs
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\bin\Debug\netcoreapp2.0\SeatAllocationTest_Cases.pdb
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\obj\Debug\netcoreapp2.0\SeatAllocationTest_Cases.dll
+D:\Project Seat Allocation\Seat-Allocation\Server\SeatAllocationTest_Cases\obj\Debug\netcoreapp2.0\SeatAllocationTest_Cases.pdb

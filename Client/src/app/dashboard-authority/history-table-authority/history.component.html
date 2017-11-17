@@ -1,0 +1,130 @@
+<h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<table class="table-responsive table-hover">
+   <h1>Pending Requests </h1>
+ <thead>
+
+ <tr>
+ 
+     <th>Request Id</th>
+     <th>Requested By</th>
+     
+     <th>CC Code</th>
+     <th>Entity</th>
+     <th>Location</th>
+     <th>Building</th>
+
+     <th>Floor</th>
+     <th>Requested Date</th>
+     <th>To Date</th>
+     <th>Seats</th>
+   
+     <th>Forward</th>
+     <th>Reject</th>
+ </tr>
+ </thead>
+ <tbody *ngFor="let item of test">
+     <tr class="tableinfo">
+
+       <td scope="row">{{item.requestId}}</td>
+       <td>{{item.requestedBy}}</td>
+       <td>{{item.buildingName}}</td>
+         <td>{{item.ccCode}}</td>
+         <td>{{item.entity}}</td>
+         <td>Noida</td>
+         <td>Tower A</td>
+ 
+         <td>{{item.floorCode}}</td>
+       
+         
+         <td>{{item.requestedOn |date : "dd/MM/yyyy"}}</td>
+         <td>{{item.toDate| date : "dd/MM/yyyy"}}</td>
+         <td><input type="text" value="{{item.noOfseats}}"size="5" #updatedseat></td>
+       
+       
+       
+
+         <td > <button style=" background: #4a5564 ;
+           " class="fa fa-forward" type="submit" class="btn btn-success clk" (click)="acceptRequest(item,updatedseat.value)">
+            <i  class="fa fa-forward" aria-hidden="true"></i></button></td>
+
+        <td>   <button class="btn btn-danger " style="margin-left:50px" data-toggle="modal" data-target="#myModal">
+                   <i class="fa fa-ban" aria-hidden="true"></i>
+                  </button></td>
+<!-- 
+
+         <div class="modal fade mdl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+
+               </div>
+               <div class="modal-body">
+
+
+                 <form action="" method="post">
+                   <div class="input-group">
+
+                     <input type="text" #nam class="form-control" placeholder="Write" value="abc">
+                   </div>
+                   <br />
+                   <button style=" background: #4a5564 " type="submit" value="sub" name="sub" class="btn btn-primary rjt" (click)="rejectRequest(item,nam.value)" data-dismiss="modal"
+                     target=_blank><i class="fa fa-share"></i>Send Reason!</button>
+                 </form>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               </div>
+             </div>
+           </div>
+         </div> -->
+
+
+         <!-- <td  class="text-warning" ><a [routerLink]="['/ViewRequest']"> <button type="button" class="btn btn-danger">Reject</button> </a></td> -->
+
+
+
+     </tr>
+
+   </tbody>
+</table>
+
+  <button class="btn btn-danger " style="margin-left:50px" data-toggle="modal" data-target="#myModal">
+    <i class="fa fa-ban" aria-hidden="true"></i>
+   </button>
+
+
+<div class="modal fade mdl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+
+</div>
+<div class="modal-body">
+
+
+  <form action="" method="post">
+    <div class="input-group">
+
+      <input type="text" #nam class="form-control" placeholder="Write" value="var.value">
+    </div>
+    <input type="checkbox" name="vehicle" onclick="bar.value=k">Full Seats
+    <br />
+    <button style=" background: #4a5564 " type="submit" value="sub" name="sub" class="btn btn-primary rjt" (click)="rejectRequest(item,nam.value)" data-dismiss="modal"
+      target=_blank><i class="fa fa-share"></i>Send Reason!</button>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- <td  class="text-warning" ><a [routerLink]="['/ViewRequest']"> <button type="button" class="btn btn-danger">Reject</button> </a></td> -->
+
+
+
+
+

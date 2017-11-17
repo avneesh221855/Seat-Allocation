@@ -1,0 +1,36 @@
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>ADD BUILDING</h1>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+
+        <div class="form-group">
+            <label for="locationCode">Location Name</label>
+            <select class="form-control" id="locationName" required [(ngModel)]="model.locationCode" name="locationCode" #locationCode="ngModel">
+                          <option *ngFor="let vals of locations "  [value]="vals.locationCode" >{{vals.locationName}}</option>
+                        </select>
+            <div [hidden]="locationCode.valid || locationCode.pristine" class="alert alert-danger">
+              Please specify Location !
+            </div>
+          </div>
+
+      <div class="form-group">
+        <label for="buildingCode">Building Code</label>
+        <input type="text" class="form-control" id="buildingCode" required [(ngModel)]="model.buildingCode" name="buildingCode" #buildingCode="ngModel">
+        <div [hidden]="buildingCode.valid || buildingCode.pristine" class="alert alert-danger">
+          Please Specify Building Code !
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="buildingName">Building Name</label>
+        <input type="text" class="form-control" id="buildingName" required [(ngModel)]="model.buildingName" name="buildingName" #buildingName="ngModel">
+        <div [hidden]="buildingName.valid || buildingName.pristine" class="alert alert-danger">
+          Please Specify Building Name !
+        </div>
+      </div>
+
+      <button class="btn btn-success" [disabled]="!heroForm.form.valid" (click)="addBuilding(model)">ADD</button>
+
+    </form>
+  </div>
+</div>
